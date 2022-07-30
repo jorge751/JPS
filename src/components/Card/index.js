@@ -1,6 +1,6 @@
 
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import BotonComprar from '../BotonComprar';
 
 function Compo(params) {
 	return (
@@ -19,7 +19,7 @@ function Compo(params) {
 			/>
 			<Card.Body>
 				<Card.Text>{params.contenido}</Card.Text>
-				<Button variant="primary">Leer más</Button>
+				<BotonComprar />
 			</Card.Body>
 		</Card>
 	);

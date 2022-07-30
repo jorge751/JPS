@@ -1,9 +1,9 @@
-import Carrito from '../../../src/cart-fill.svg';
+import BotonCarrito from '../BotonCarrito';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Compo() {
@@ -57,9 +57,8 @@ function Compo() {
 						<Nav.Link href="/createuser">Creá tu cuenta</Nav.Link>
 						<Nav.Link href="/login">Ingresá</Nav.Link>
 					</Nav>
-			        <button className='btn btn-warning'>
-						<img src={Carrito} alt="logo" />Compra
-					</button>
+
+					<BotonCarrito />
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>

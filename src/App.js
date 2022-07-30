@@ -1,7 +1,9 @@
 
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from './components/Navbar';
-import { Routes, Route } from "react-router-dom";
 import Footer from './components/Footer';
 
 import AboutPage from './components/About';
@@ -12,26 +14,31 @@ import FacturacionPage from './components/Facturacion';
 import ColegioPage from './components/Colegio';
 import ClientesPage from './components/Clientes';
 
+import ContCompraProvider from './context/ContadorCompra';
+
 function App() {
+
 	return (
 		<div className="App">
-			<header>
-				<Navbar />
-			</header>
-			<main>
-				<Routes>
-					<Route exact path="/about" element = {<AboutPage />} />
-					<Route exact path="/" element = {<HomePage />} />
-					<Route exact path="/saas" element = {<SaaSPage />} />
-					<Route exact path="/ventas" element = {<VentasPage />} />
-					<Route exact path="/facturacion" element = {<FacturacionPage />} />
-					<Route exact path="/colegio" element = {<ColegioPage />} />
-					<Route exact path="/clientes" element = {<ClientesPage />} />
-				</Routes>
-			</main>
-			<footer>
-				<Footer />
-			</footer>
+			<BrowserRouter>
+				<ContCompraProvider>
+					<header>
+						<Navbar />
+						<Routes>
+							<Route exact path="/about" element = {<AboutPage />} />
+							<Route exact path="/" element = {<HomePage />} />
+							<Route exact path="/saas" element = {<SaaSPage />} />
+							<Route exact path="/ventas" element = {<VentasPage />} />
+							<Route exact path="/facturacion" element = {<FacturacionPage />} />
+							<Route exact path="/colegio" element = {<ColegioPage />} />
+							<Route exact path="/clientes" element = {<ClientesPage />} />
+						</Routes>
+					</header>
+				</ContCompraProvider>
+				<footer>
+					<Footer />
+				</footer>
+			</BrowserRouter>
 		</div>
 	);
 }
