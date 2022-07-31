@@ -14,7 +14,7 @@ import FacturacionPage from './components/Facturacion';
 import ColegioPage from './components/Colegio';
 import ClientesPage from './components/Clientes';
 
-import ContCompraProvider from './context/ContadorCompra';
+import ContCompraProvider from './components/ContadorCompra';
 
 function App() {
 

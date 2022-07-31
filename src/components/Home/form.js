@@ -12,23 +12,23 @@ function Compo() {
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <div className="form-floating mb-3">
                                 <input className="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Nombre</label>
+                                <label htmlFor="name">Nombre</label>
                                 <div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <div className="form-floating mb-3">
                                 <input className="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Correo electrónico</label>
+                                <label htmlFor="email">Correo electrónico</label>
                                 <div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <div className="form-floating mb-3">
                                 <input className="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Teléfono</label>
+                                <label htmlFor="phone">Teléfono</label>
                                 <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <div className="form-floating mb-3">
                                 <textarea className="form-control" id="message" type="text" placeholder="Enter your message here..." style={{height: '10rem'}} data-sb-validations="required"></textarea>
-                                <label for="message">Mensaje</label>
+                                <label htmlFor="message">Mensaje</label>
                                 <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                             <div className="d-none" id="submitSuccessMessage">

@@ -1,7 +1,7 @@
 
 import Imagen from '../../../src/cart-fill.svg';
 
-import { useContCompraContext } from '../../context/ContadorCompra';
+import { useContCompraContext } from '../ContadorCompra';
 
 function Compo() {
 
@@ -14,16 +14,16 @@ function Compo() {
 
 	const cssInsignia = {
 		position: 'absolute',
-		top: '16px',
-		left: (contador > 9 ? '21px' : '24px')
+		top: '1.3em',
+		left: (contador > 9 ? '1.7em' : '2em')
 	}
 
 	return (
 		<div
 			className = 'btn btn-warning'
 			style = {cssDiv}
-			dataToggle = 'tooltip'
-			dataPlacement = 'top'
+			datatoggle = 'tooltip'
+			dataplacement = 'top'
 			title = 'Restar carrito'
 			onClick = { () => restar() }
 		>

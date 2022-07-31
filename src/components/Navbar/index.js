@@ -1,4 +1,5 @@
-import BotonCarrito from '../BotonCarrito';
+
+import WidgetCarrito from '../WidgetCarrito';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -58,7 +59,8 @@ function Compo() {
 						<Nav.Link href="/login">Ingresá</Nav.Link>
 					</Nav>
 
-					<BotonCarrito />
+					<WidgetCarrito />
+
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>

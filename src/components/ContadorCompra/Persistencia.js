@@ -1,28 +1,29 @@
 
 //
-//  Persistencia en local storage de contador de compra
+//  Persistencia de contador de compra en local storage
 //
 
 import { useState } from 'react';
 
 function Compo(valorParam) {
 
+    //  Crea clave de local storage
     const clave = 'contador_compra';
 
     //  Crea contador y su setter
-    const [valor, setValor] = useState(() => {
+    const [contador, setContador] = useState(() => {
         const valor = localStorage.getItem(clave);
         return valor ? Number(valor) : valorParam;
     });
 
     //  Crea acción de persistencia
     const set = (valor) => {
-        setValor(valor);
+        setContador(valor);
         localStorage.setItem(clave, String(valor));
     };
 
-    //  Devuelve valor y acción de persistencia
-    return [valor, set];
+    //  Devuelve contador y acción de persistencia
+    return [contador, set];
 }
 
 export default Compo;

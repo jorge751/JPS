@@ -1,6 +1,6 @@
 
 import Button from 'react-bootstrap/Button';
-import { useContCompraContext } from "../../context/ContadorCompra";
+import { useContCompraContext } from "../ContadorCompra";
 
 function Compo() {
 
