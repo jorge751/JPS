@@ -31,7 +31,12 @@ function Compo() {
 						con mucho talento y deseamos que
 						seas parte de nuestro crecimiento.
 					</p>
-					<p style={cssParrafo}>
+				</div>
+			</div>
+
+			<div className='row'>
+				<div className='d-flex justify-content-center'>
+					<p style={{...cssParrafo, textAlign: 'center'}}>
 						Apostamos a que nuestras licencias,
 						servicios y contratos aseguren productividad
 						en tu negocio.

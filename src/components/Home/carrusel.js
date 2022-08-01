@@ -1,3 +1,4 @@
+
 import Carousel from 'react-bootstrap/Carousel';
 
 function Compo() {
@@ -18,19 +19,19 @@ function Compo() {
 					className='d-block mx-auto my-5'
 					src='Colegio/tarjeta1/imagen.png'
 					width='500px'
-					alt='First slide'
+					alt='Primera'
 				/>
 			</Carousel.Item>
 
 			<Carousel.Item>
 				<h5 className='text-center mt-3'>
-					Facturación sanatorial - Escritorio
+					Facturación prestacional - Escritorio
 				</h5>
 				<img
 					className='d-block mx-auto my-5'
 					src='Facturacion/tarjeta1/imagen.png'
 					width='500px'
-					alt='Second slide'
+					alt='Segunda'
 				/>
 			</Carousel.Item>
 
@@ -42,7 +43,19 @@ function Compo() {
 					className='d-block mx-auto my-5'
 					src='Contabilidad/tarjeta1/imagen.png'
 					width='500px'
-					alt='Third slide'
+					alt='Tercera'
+				/>
+			</Carousel.Item>
+
+			<Carousel.Item>
+				<h5 className='text-center mt-3'>
+					Venta de bar - Web
+				</h5>
+				<img
+					className='d-block mx-auto my-5'
+					src='web/tarjeta1/imagen.png'
+					width='500px'
+					alt='Cuarta'
 				/>
 			</Carousel.Item>
 

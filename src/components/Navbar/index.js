@@ -25,7 +25,7 @@ function Compo() {
 						<Nav.Link href="/saas">Servicio SasS</Nav.Link>
 						<NavDropdown title="Desarrollo de scritorio" id="navbarScrollingDropdown">
 							<NavDropdown.Item href="/ventas">Ventas</NavDropdown.Item>
-							<NavDropdown.Item href="/facturacion">Facturación</NavDropdown.Item>
+							<NavDropdown.Item href="/facturacion">Facturación prestacional</NavDropdown.Item>
 							<NavDropdown.Item href="/colegio">Adm. de colegio</NavDropdown.Item>
 							<NavDropdown.Divider />
 							<NavDropdown.Item href="/clientes">Clientes</NavDropdown.Item>
