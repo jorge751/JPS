@@ -13,6 +13,7 @@ import VentasPage from './components/Ventas';
 import FacturacionPage from './components/Facturacion';
 import ColegioPage from './components/Colegio';
 import ClientesPage from './components/Clientes';
+import WebPage from './components/Web';
 
 import ContCompraProvider from './components/ContadorCompra';
 
@@ -32,6 +33,7 @@ function App() {
 							<Route exact path="/facturacion" element = {<FacturacionPage />} />
 							<Route exact path="/colegio" element = {<ColegioPage />} />
 							<Route exact path="/clientes" element = {<ClientesPage />} />
+							<Route exact path="/web" element = {<WebPage />} />
 						</Routes>
 					</header>
 				</ContCompraProvider>

@@ -6,7 +6,11 @@ import Carrusel from './carrusel';
 function Compo() {
 
 	const cssParrafo = {
-		fontSize: '25px', fontWeight: 'bold', textAlign: 'right'
+		fontSize: '25px',
+		fontWeight: 'bold',
+		textAlign: 'right',
+		backgroundColor: 'white',
+		padding: '20px'
 	}
 
 	return (

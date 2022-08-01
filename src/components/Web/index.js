@@ -14,15 +14,11 @@ function Compo() {
 			.then((contenido) => setContenido(contenido));
 	}, [])
 
-	const cssDiv = {display: 'inline-block'};
-
 	return (
 		<main>
 			<h2>{cfg.titulo}</h2>
 			<p className='bg-white mx-5 p-2'>{contenido}</p>
-			<div style={cssDiv}>
-				<BotonComprar />
-			</div>
+			<BotonComprar />
 		</main>
 	);
 }

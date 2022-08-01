@@ -1,17 +1,16 @@
 
+import { Children } from 'react';
 import Button from 'react-bootstrap/Button';
 import { useContCompraContext } from "../ContadorCompra";
 
-function Compo() {
+function Compo(props) {
 
 	const { sumar } = useContCompraContext();
 
 	return (
-		<>
-		<Button variant="primary" onClick={() => sumar()}>
-			Comprar
+		<Button className='mx-2' variant="primary" onClick={() => sumar()}>
+			{props.caption || 'Comprar'}
 		</Button>
-		</>
 	);
 }
 
